@@ -1,0 +1,12 @@
+JVM --> TUKGateSystem :createAnInstanceOfOurProgram
+TUKGateSystem --> TUKGateSystem :main*
+
+TUKGateSystem -->User  :register() 
+User -->FileBasedStore :createUsersFile(username, passwd)*
+FileBasedStore -->File :new
+
+TUKGateSystem -->User  :login() 
+User -->FileBasedStore :checkUser(username, passwd)*
+FileBasedStore -->FileBasedStore :validate
+FileBasedStore -->File
+FileBasedStore -->User
