@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class Register {
+public class Register extends ConnectToMysql {
     private String userName;
     private String password;
     private String email;
@@ -54,26 +54,40 @@ public class Register {
         this.address= address;
     }
     // Insert  to Database
-
-
     public void insert() {
-        // 1.  connect to database
-        // 2.  insert to database
-        // 3.  close connection
-        // 4.  return to login page
-        // 5.  show message
-        // 6.  show error message
-        // 7.  show success message
+        ConnectToMysql conn = new ConnectToMysql();
+        conn.connectToDB();
+
+        Connection con = conn.connection;
+
         try {
-            String sql = "INSERT INTO register (userName, password, email, firstName, lastName, address) VALUES ('" + userName + "', '" + password + "', '" + email + "', '" + firstName + "', '" + lastName + "', '" + address + "')";
-            stmt.executeUpdate(sql);
-            con.close();
-         
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return;
+            String query = "INSERT INTO Register (userName, password, email, firstName, lastName, address) VALUES (?, ?, ?, ?, ?, ?)";
+            PreparedStatement preparedStmt = con.prepareStatement(query);
+            preparedStmt.setString(1, userName);
+            preparedStmt.setString(2, password);
+            preparedStmt.setString(3, email);
+            preparedStmt.setString(4, firstName);
+            preparedStmt.setString(5, lastName);
+            preparedStmt.setString(6, address);
+            preparedStmt.execute();
+
+            // add to frame the success
+            new SuccessDialog("The User  Registration has been Succesfully.");
+
+            
+        } catch (Exception e) {
+            System.out.println(e);
+            new ErrorDialog("The  User  Registration have failed");
         }
-        } 
-        
-    
+
+
+    }
+  
+
+
+   
+
+ 
+
+
 }

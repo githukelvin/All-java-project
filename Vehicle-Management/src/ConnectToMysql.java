@@ -1,7 +1,12 @@
 import java.sql.*;
 
 public class ConnectToMysql {
-    public static void main(String[] args) {
+    // Connection and statement objects
+    Connection connection = null;
+    Statement statement = null;
+    ResultSet resultSet = null;
+
+    public void connectToDB(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
@@ -13,34 +18,19 @@ public class ConnectToMysql {
         String username = "root";
         String password = "";
 
-        // Connection and statement objects
-        Connection connection = null;
-        Statement statement = null;
-        ResultSet resultSet = null;
 
-      
+
 
         try {
-      
+
             // Establish the connection
             connection = DriverManager.getConnection(url, username, password);
-
-            // Create a statement
-            statement = connection.createStatement();
-
-            // Execute a query
-            String sql = "SELECT * FROM Register";
-            resultSet = statement.executeQuery(sql);
-
-            // Process the result set
-            while (resultSet.next()) {
-                int id = resultSet.getInt("User_id");
-                String name = resultSet.getString("UserName");
-                System.out.println("ID: " + id + ", Name: " + name);
-            }
+            // if connection sucessful return connection
+        
         } catch (Exception e) {
             System.out.println(e);
         }
-
     }
+
+
 }
