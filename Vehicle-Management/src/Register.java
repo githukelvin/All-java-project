@@ -1,4 +1,5 @@
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 
 public class Register extends ConnectToMysql {
     private String userName;
@@ -74,7 +75,7 @@ public class Register extends ConnectToMysql {
             // add to frame the success
             new SuccessDialog("The User  Registration has been Succesfully.");
 
-            
+
         } catch (Exception e) {
             System.out.println(e);
             new ErrorDialog("The  User  Registration have failed");
@@ -82,12 +83,6 @@ public class Register extends ConnectToMysql {
 
 
     }
-  
-
-
-   
-
- 
 
 
 }

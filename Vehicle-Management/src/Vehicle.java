@@ -1,17 +1,20 @@
-import java.sql.*;
 import javax.swing.*;
 import java.awt.*;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.Statement;
 
 public class Vehicle extends ConnectToMysql {
 
 
-    public void addVehicle(){
+    public void addVehicle() {
         // DB
-  
+
         // Object  class
         JFrame addVehicleFrame = new JFrame("Add Vehicle");
 
-        // buttons for  diferrebt types of vehicle
+        // buttons for  different types of vehicle
         JButton carButton = new JButton("Car");
         carButton.setBounds(50, 200, 100, 30);
         addVehicleFrame.add(carButton);
@@ -19,7 +22,7 @@ public class Vehicle extends ConnectToMysql {
         truckButton.setBounds(150, 200, 100, 30);
         addVehicleFrame.add(truckButton);
         JButton motorcycleButton = new JButton("Motorcycle");
-        motorcycleButton.setBounds(250, 200, 100, 30);  
+        motorcycleButton.setBounds(250, 200, 100, 30);
         addVehicleFrame.add(motorcycleButton);
         JButton busButton = new JButton("Bus");
         busButton.setBounds(350, 200, 100, 30);
@@ -43,9 +46,9 @@ public class Vehicle extends ConnectToMysql {
             // check if text is equal to car
             if (buttonText.equals("Car")) {
                 // call add car method
-                AddVehicle Vehicles= new AddVehicle();
-                Vehicles.addAVehicle(addVehicleFrame ,buttonText);
-      
+                AddVehicle Vehicles = new AddVehicle();
+                Vehicles.addAVehicle(addVehicleFrame, buttonText);
+
             }
         });
         // truck button action listener
@@ -55,8 +58,8 @@ public class Vehicle extends ConnectToMysql {
             // check if text is equal to truck
             if (buttonText.equals("Truck")) {
                 // call add truck method
-                AddVehicle Vehicles= new AddVehicle();
-                Vehicles.addAVehicle(addVehicleFrame ,buttonText);
+                AddVehicle Vehicles = new AddVehicle();
+                Vehicles.addAVehicle(addVehicleFrame, buttonText);
             }
         });
         // motorcycle button action listener
@@ -66,8 +69,8 @@ public class Vehicle extends ConnectToMysql {
             // check if text is equal to motorcycle
             if (buttonText.equals("Motorcycle")) {
                 // call add motorcycle method
-                AddVehicle Vehicles= new AddVehicle();
-                Vehicles.addAVehicle(addVehicleFrame ,buttonText);
+                AddVehicle Vehicles = new AddVehicle();
+                Vehicles.addAVehicle(addVehicleFrame, buttonText);
             }
         });
         // bus button action listener
@@ -77,8 +80,8 @@ public class Vehicle extends ConnectToMysql {
             // check if text is equal to bus
             if (buttonText.equals("Bus")) {
                 // call add bus method
-                AddVehicle Vehicles= new AddVehicle();
-                Vehicles.addAVehicle(addVehicleFrame ,buttonText);
+                AddVehicle Vehicles = new AddVehicle();
+                Vehicles.addAVehicle(addVehicleFrame, buttonText);
             }
         });
         // van button action listener
@@ -88,8 +91,8 @@ public class Vehicle extends ConnectToMysql {
             // check if text is equal to van
             if (buttonText.equals("Van")) {
                 // call add van method
-                AddVehicle Vehicles= new AddVehicle();
-                Vehicles.addAVehicle(addVehicleFrame ,buttonText);
+                AddVehicle Vehicles = new AddVehicle();
+                Vehicles.addAVehicle(addVehicleFrame, buttonText);
             }
         });
         // trailer button action listener
@@ -99,15 +102,14 @@ public class Vehicle extends ConnectToMysql {
             // check if text is equal to trailer
             if (buttonText.equals("Trailer")) {
                 // call add trailer method
-                AddVehicle Vehicles= new AddVehicle();
-                Vehicles.addAVehicle(addVehicleFrame ,buttonText);
+                AddVehicle Vehicles = new AddVehicle();
+                Vehicles.addAVehicle(addVehicleFrame, buttonText);
             }
         });
         // add button action listener
 
 
-
-        // action  btns
+        // action  btn
         // jbutton to go back to main menu
         JButton mainMenuButton = new JButton("Main Menu");
         mainMenuButton.setBounds(200, 300, 100, 30);
@@ -118,8 +120,6 @@ public class Vehicle extends ConnectToMysql {
         addVehicleFrame.add(exitButton);
 
 
-
-        
         // main menu button action listener
         mainMenuButton.addActionListener(e -> {
             // go back to main menu
@@ -127,9 +127,6 @@ public class Vehicle extends ConnectToMysql {
             // return 
             MainMenuFrame mainMenuFrame = new MainMenuFrame();
             mainMenuFrame.MainMenu();
-
-
-
 
 
         });
@@ -177,8 +174,8 @@ public class Vehicle extends ConnectToMysql {
                 row++;
             }
 
-            String[] columnNames = { "vehicleMake", "vehicleName", "vehicleModel", "vehicleYear", "vehiclePrice",
-                    "vehicleColor", "bodyType", "noOfDoors", "Space" };
+            String[] columnNames = {"vehicleMake", "vehicleName", "vehicleModel", "vehicleYear", "vehiclePrice",
+                    "vehicleColor", "bodyType", "noOfDoors", "Space"};
 
             // Create a JTable with the data and column names
             JTable table = new JTable(data, columnNames);
@@ -209,15 +206,7 @@ public class Vehicle extends ConnectToMysql {
         }
     }
 
-    
 
-
-        
-
-
-
-
-        
 }
 
      

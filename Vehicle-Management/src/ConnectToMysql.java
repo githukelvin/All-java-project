@@ -1,4 +1,7 @@
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class ConnectToMysql {
     // Connection and statement objects
@@ -6,7 +9,7 @@ public class ConnectToMysql {
     Statement statement = null;
     ResultSet resultSet = null;
 
-    public void connectToDB(){
+    public void connectToDB() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
@@ -19,14 +22,12 @@ public class ConnectToMysql {
         String password = "";
 
 
-
-
         try {
 
             // Establish the connection
             connection = DriverManager.getConnection(url, username, password);
             // if connection sucessful return connection
-        
+
         } catch (Exception e) {
             System.out.println(e);
         }

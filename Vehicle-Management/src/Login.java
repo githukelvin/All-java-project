@@ -1,18 +1,17 @@
-import java.sql.*;
+import java.sql.Connection;
 
 public class Login extends ConnectToMysql {
 
-    private String  userName;
+    private final String userName;
     private String password;
 
 
-    // from  database
     public Login(String userName, String password) {
         this.userName = userName;
         this.password = password;
     }
-    
-    
+
+
     public boolean login() {
         // select from database
         ConnectToMysql conn = new ConnectToMysql();
@@ -32,16 +31,16 @@ public class Login extends ConnectToMysql {
             } else {
                 // add   to frame the error
                 new ErrorDialog("Login Was Unsuccessful");
-                return  false;
+                return false;
             }
         } catch (Exception e) {
             System.out.println(e);
             return false;
         }
-        
-        
+
+
     }
-    
+
 }
 
 

@@ -1,17 +1,12 @@
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
+import javax.swing.*;
 
 
 public class MainMenuFrame extends ConnectToMysql {
     private JFrame vehicleFrame;
 
-       
 
     public void MainMenu() {
-     
+
         vehicleFrame = new JFrame("Vehicle Manager");
         vehicleFrame.setSize(500, 600);
         vehicleFrame.setLayout(null);
@@ -43,34 +38,30 @@ public class MainMenuFrame extends ConnectToMysql {
         JLabel userName = new JLabel("Username");
         userName.setBounds(0, 550, 100, 30);
         vehicleFrame.add(userName);
-        
 
-          // add vehicle
-                    addVehicle.addActionListener(e2->
 
-                    {
-                        // close frame
-                        vehicleFrame.dispose();
-                        Vehicle vehicle = new Vehicle();
-                        vehicle.addVehicle();
-                        // get inputs if add vehicle === add vehicle
+        // add vehicle
+        addVehicle.addActionListener(e2 ->
 
-                    });
-                    // view button
-                    viewVehicle.addActionListener(e3->
-                    {
-                        // close frame
-                        vehicleFrame.dispose();
-                        Vehicle veh = new Vehicle();
-                        veh.viewVehicle();
-                    });
-       
+        {
+            // close frame
+            vehicleFrame.dispose();
+            Vehicle vehicle = new Vehicle();
+            vehicle.addVehicle();
+            // get inputs if add vehicle === add vehicle
+
+        });
+        // view button
+        viewVehicle.addActionListener(e3 ->
+        {
+            // close frame
+            vehicleFrame.dispose();
+            Vehicle veh = new Vehicle();
+            veh.viewVehicle();
+        });
 
 
     }
 
-   
-
-                  
 
 }

@@ -5,51 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f4efe76-ebcf-4901-a9ea-0363bf73c5c2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/VIEW.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle-Management.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vehicle-Management.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/AddVehicle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/ErrorDialog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/MainMenuFrame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/SuccessDialog.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/data.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Vehicle-Management/test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AddVehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainMenuFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/CarEngine.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/Engine.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/Owner.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/TruckEngine.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/Vehicle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/VehicleM$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/VehicleM$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/VehicleM$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/VehicleM$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/VehicleM.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../judy/VehicleM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vehicle Management.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Bus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Car.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ConnectToMysql.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vehicle.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vehicle-Management.rar" beforeDir="false" afterPath="$PROJECT_DIR$/Vehicle-Management.rar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/AddVehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/AddVehicle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/ConnectToMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/ConnectToMysql.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/MainMenuFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/MainMenuFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Truck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Van.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Vehicle.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Vehicle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/VehicleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/VehicleManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConnectToMysql.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/data.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.session.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddVehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConnectToMysql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectToMysql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErrorDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainMenuFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainMenuFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Truck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Van.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SuccessDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SuccessDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VehicleManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +78,11 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "module"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -128,7 +111,7 @@
       <updated>1684782732815</updated>
       <workItem from="1684782732828" duration="9246000" />
       <workItem from="1684836123209" duration="16974000" />
-      <workItem from="1684932362507" duration="8336000" />
+      <workItem from="1684932362507" duration="12171000" />
     </task>
     <servers />
   </component>

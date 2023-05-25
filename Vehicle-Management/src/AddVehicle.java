@@ -1,17 +1,13 @@
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-
-public class AddVehicle extends ConnectToMysql{
+public class AddVehicle extends ConnectToMysql {
     public String vehicleMake;
     public String vehicleName;
     public String vehicleModel;
     public String vehicleYear;
-    public Float vehiclePrice; 
+    public Float vehiclePrice;
     public String vehicleColor;
     public String bodyType;
     public int noOfDoors;
@@ -123,13 +119,12 @@ public class AddVehicle extends ConnectToMysql{
         addFrame.add(previousButton);
 
         // action
-        previousButton.addActionListener(e1->{
+        previousButton.addActionListener(e1 -> {
             addFrame.dispose();
             Vehicle vh = new Vehicle();
             vh.addVehicle();
         });
-       
-        
+
 
         // add vehicle button action listener
         addVehicleButton.addActionListener(e -> {
@@ -195,5 +190,5 @@ public class AddVehicle extends ConnectToMysql{
 
     }
 
-    
+
 }
